@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import { Link, animateScroll as scroll} from 'react-scroll';
-import { FaTwitter, FaPaperPlane} from "react-icons/fa";
+import { FaPaperPlane} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import logo from '../assets/img/Logo.svg'
 export default function Header() {
   const [isMenu, setIsMenu] = useState(false);
@@ -9,8 +10,6 @@ export default function Header() {
     navigate(event);
     setIsMenu(!isMenu);
   };
-  
-
   const socialLogo = <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" viewBox="0 0 30 27" fill="none">
   <path d="M25.0088 21.8125L23.79 19.75H6.21192L15.0088 4.51562L12.7119 0.515625H9.74317C8.44629 0.515625 7.25879 1.21875 6.61817 2.34375L1.29004 11.7344C0.665039 12.8281 0.665039 14.1875 1.29004 15.2813L5.00879 21.8594L6.60254 24.6719C7.24317 25.7969 8.43067 26.5 9.72754 26.5H20.2588C21.5557 26.5 22.7432 25.8125 23.3994 24.6719L24.9932 21.875L25.0088 21.8125Z" fill="url(#paint0_linear_152_2130)"/>
   <path d="M23.8057 19.75H6.24316L6.32129 19.7031L12.2119 16.1719C13.1182 15.5781 13.8057 15.2344 14.4463 15.125C14.4619 15.125 14.4775 15.1094 14.4932 15.1094C14.54 15.0937 14.5713 15.0937 14.6182 15.0937C14.6963 15.0781 14.7588 15.0781 14.8369 15.0781H14.9775C15.0713 15.0781 15.1963 15.0937 15.29 15.1094C15.9619 15.2031 16.6807 15.5313 17.665 16.0938L23.7744 19.7188L23.8057 19.75Z" fill="url(#paint1_linear_152_2130)"/>
@@ -39,6 +38,13 @@ export default function Header() {
     </linearGradient>
   </defs>
 </svg>;
+  const socialLinks = [
+    { icon: <FaPaperPlane />, href: '#' },
+    { icon: <FaXTwitter />, href: '#' },
+    { icon: socialLogo, href: '#' }
+];
+
+
   return (
     <>
       <header className='heading'>
@@ -59,9 +65,9 @@ export default function Header() {
               </button>
             </div>
             <ul className="social-links">
-              <li><a href="/"><FaTwitter /></a></li>
-              <li><a href="/"><FaPaperPlane /></a></li>
-              <li><a href="/">{socialLogo}</a></li>
+                {socialLinks.map((link, index) => (
+                    <li key={index}><a href={link.href}>{link.icon}</a></li>
+                ))}
             </ul>
             <a href="/" className='boxed-btn'>Buy Now</a>
           </nav>
