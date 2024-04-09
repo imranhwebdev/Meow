@@ -23,8 +23,12 @@ h6 {
 };
 
 h2{
+    @include Quicksand;
     @include font-110;
     text-transform: capitalize;
+    color: $black;
+    font-weight: 700;
+    line-height: 90%; /* 99px */
 }
 
 h3{
