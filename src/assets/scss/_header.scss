@@ -1,0 +1,153 @@
+@keyframes headerAnimation {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.heading {
+    padding: var(--bs-navbar-padding-y) 0;
+    --bs-navbar-padding-y: 30px;
+    @include md {
+        --bs-navbar-padding-y: 24px;
+    }
+    @include sm {
+        --bs-navbar-padding-y: 20px;
+    }
+    &-menu {
+        @include mmd {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba($color: #85F377, $alpha: .90);
+            padding: 24px 16px;
+            transform: translateY(100%);
+            @include transition;
+            &.show-menu {
+                transform: translate(0, 0);
+            }
+        }
+        & .title {
+            margin-bottom: 32px;
+            @include sm {
+                margin-bottom: 24px;
+            }
+        }
+        & .heading-actions {
+            @include mmd {
+                margin-top: 32px;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            @include sm {
+                margin-top: 26px;
+            }
+        }
+    }
+    &-link {
+        // @include font-18;
+        color: $_BEC1D6;
+        @include Krungthep;
+        display: block;
+        text-transform: uppercase;
+        padding: 8px 21px;
+        cursor: pointer;
+        @include lg {
+            padding: 10px 12px;
+        }
+        @include mmd {
+            font-weight: 600;
+            // @include font-20;
+            // color: $heading;
+            border-radius: 10px;
+            padding: 13px 15px;
+        }
+        &:hover,
+        &.active {
+            color: $white;
+            // background-color: $heading;
+
+        }
+    }
+    &-actions {
+        grid-gap: 12px;
+        @include sm {
+            grid-gap: 8px;
+        }
+    }
+    & .btn {
+        --bs-btn-border-width: 1px !important;
+        --bs-btn-padding-x: 20px !important;
+        --bs-btn-padding-y: 7px !important;
+        &:not(.bg-primary) {
+            // border-color: $primary !important;
+            // color: $primary !important;
+            &:hover {
+                color: $white !important;
+            }
+        }
+    }
+    & .container {
+        position: relative;
+    }
+  
+    &-toggler {
+        --btn-padding-x: 4px;
+        --btn-padding-y: 5px;
+        border: none;
+        background-color: transparent;
+        // color: $heading;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & svg {
+            --width: 40px;
+            width: var(--width);
+            height: var(--width);
+            @include sm {
+                --width: 32px;
+            }
+            @include ssm {
+                --width: 26px;
+            }
+        }
+    }
+button:focus {
+    outline: none;
+    border-color: $black;
+}
+.logo{
+    img {
+        max-width: 174px;
+    }
+}
+}
+
+.main_menu{
+    // border: 1px solid $paragraph;
+    border-radius: 56px;
+    padding: 8px;
+    @include mmd{
+        border-radius: 10px;
+    }
+}
+
+ul.social-links a path {
+    fill: #000;
+}
+
+.boxed-btn{
+    border-radius: 32px;
+    background: var(--Primary, linear-gradient(0deg, #E83227 1.47%, #FF757E 101.47%));
+    box-shadow: 2px 4px 0px 0px #000;
+    color: var(--White, #FFF);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 14px 24px;
+}
