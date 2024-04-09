@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import heroRImg from "../assets/img/heroRImg.png"
 import { FaPaperPlane} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import heroBG from '../assets/img/hero-bg.png'
+import heroShap from '../assets/img/hero-bottom-Img.png'
 export default function Hero() {
     const socialLogo = <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" viewBox="0 0 30 27" fill="none">
     <path d="M25.0088 21.8125L23.79 19.75H6.21192L15.0088 4.51562L12.7119 0.515625H9.74317C8.44629 0.515625 7.25879 1.21875 6.61817 2.34375L1.29004 11.7344C0.665039 12.8281 0.665039 14.1875 1.29004 15.2813L5.00879 21.8594L6.60254 24.6719C7.24317 25.7969 8.43067 26.5 9.72754 26.5H20.2588C21.5557 26.5 22.7432 25.8125 23.3994 24.6719L24.9932 21.875L25.0088 21.8125Z" fill="url(#paint0_linear_152_2130)"/>
@@ -47,9 +49,9 @@ export default function Hero() {
                     <span>Welcome to Meow Meow</span>
                     <h1>$MEOW</h1>
                     <p>$MEOW is the first and only cat on Tron tweeted by Justin Sun</p>
-                    <div className="social-btns d-flex align-items-center">
+                    <div className="social-btns d-sm-flex align-items-center">
                         <a href="/" className='boxed-btn'>Buy Now</a>
-                        <ul className="social-links">
+                        <ul className="social-links mt-4 mt-sm-0">
                             {socialLinks.map((link, index) => (
                                 <li key={index}><a href={link.href}>{link.icon}</a></li>
                             ))}
@@ -64,7 +66,12 @@ export default function Hero() {
             </Col>
         </Row>
       </Container>
-
+      <figure className='heroBG'>
+          <img src={heroBG} alt="" />
+        </figure>
+        <figure className='heroShap'>
+          <img src={heroShap} alt="" />
+        </figure>
     </section>
   )
 }

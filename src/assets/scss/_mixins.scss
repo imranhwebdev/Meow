@@ -47,17 +47,14 @@
     right: 0;
 }
 
-@mixin Krungthep {
-    font-family: "Krungthep";
+@mixin Sigmar{
+    font-family: "Sigmar One", sans-serif;
 }
 
-@mixin ME-Regular {
-    font-family: "MonumentExtended-Regular";
+@mixin Quicksand {
+    font-family: "Quicksand", sans-serif;
 }
 
-@mixin ME-Ultrabold {
-    font-family: "MonumentExtended-Ultrabold";
-}
 
 @mixin beforeAfter {
     position: absolute;
@@ -68,66 +65,64 @@
     height: 100%;
 }
 
-@mixin font-90{
-    font-size: 90px;
-    line-height: 1.4;
+@mixin font-170{
+    font-size: 170px;
+    line-height: 90%;
     @include xxl {
-        font-size: 80px;
+        font-size: 150px;
     }
     @include xl {
-        font-size: 70px;
+        font-size: 130px;
     }
     @include lg {
-        font-size: 65px;
+        font-size: 110px;
     }
     @include md {
-        font-size: 55px;
+        font-size: 80px;
+    }
+    @include sm {
+        font-size: 70px;
+    }
+}
+
+@mixin font-110 {
+    font-size: 110px;
+    line-height: 90%;
+    @include xl {
+        font-size: 90px;
+    }
+    @include lg {
+        font-size: 70px;
+    }
+    @include md {
+        font-size: 60px;
     }
     @include sm {
         font-size: 50px;
     }
-    @include xsm {
-        font-size: 45px;
-    }
 }
 
-@mixin font-43 {
-    font-size: 43px;
-    line-height: 160%;
-    @include xl {
-        font-size: 43px;
-    }
-    @include lg {
+@mixin font-40 {
+    font-size: 40px;
+    line-height: 120%;
+    @include md {
         font-size: 35px;
     }
-    @include md {
-        font-size: 30px;
-    }
     @include sm {
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 
-@mixin font-35 {
-    font-size: 35px;
-    line-height: 160%;
-    @include md {
-        font-size: 30px;
-    }
-    @include sm {
-        font-size: 25px;
-    }
-}
-@mixin font-28 {
-    font-size: 28px;
-    line-height: 160%;
-    @include md {
-        font-size: 24px;
-    }
-    @include sm {
-        font-size: 20px;
-    }
-}
+// @mixin font-28 {
+//     font-size: 28px;
+//     line-height: 160%;
+//     @include md {
+//         font-size: 24px;
+//     }
+//     @include sm {
+//         font-size: 20px;
+//     }
+// }
 
 @mixin font-24 {
     font-size: 24px;
@@ -143,27 +138,27 @@
     }
 }
 
-@mixin font-22 {
-    font-size: 22px;
-    line-height: 160%;
-    @include lg {
-        font-size: 18px;
-    }
-    @include md {
-        font-size: 18px;
-    }
-    @include sm {
-        font-size: 16px;
-    }
-}
+// @mixin font-22 {
+//     font-size: 22px;
+//     line-height: 160%;
+//     @include lg {
+//         font-size: 18px;
+//     }
+//     @include md {
+//         font-size: 18px;
+//     }
+//     @include sm {
+//         font-size: 16px;
+//     }
+// }
 
-@mixin font-18 {
-    font-size: 18px;
-    line-height: 160%;
-    @include mmd {
-        font-size: 16px;
-    }
-}
+// @mixin font-18 {
+//     font-size: 18px;
+//     line-height: 160%;
+//     @include mmd {
+//         font-size: 16px;
+//     }
+// }
 
 
 @mixin flex {

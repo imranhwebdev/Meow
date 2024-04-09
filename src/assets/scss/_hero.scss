@@ -1,0 +1,125 @@
+.hero{
+    &-area{
+        position: relative;
+        z-index: 1;
+        padding-top: 114px;
+        padding-bottom: 220px;
+        @include mmd{
+            padding-top: 70px;
+
+        }
+        & .heroBG{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+        }
+        & .heroShap{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+        }
+        & .heroRImg{
+            margin-right: -80px;
+            margin-left: 80px;
+            max-width: 700px;
+            @include xxl{
+                margin-right: -8%;
+                margin-left: 8%;
+            }
+            @include xl{
+                margin-right: -2%;
+                margin-left: 2%;
+            }
+            @include lg{
+                margin-right: 0;
+                margin-left: 0;
+            }
+            @include mmd{
+                margin-inline: auto;
+                text-align: center;
+                padding: 0 30px;
+                margin-top: 50px;
+            }
+        }
+    }
+    &-content{
+        margin-left: -100px;
+        @include xxl{
+            margin-left: -8%;
+        }
+        @include xl{
+            margin-left: -2%;
+        }
+        @include lg{
+            margin-left: 0;
+        }
+        @include mmd{
+            margin-left: 0;
+            text-align: center;
+        }
+        span{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 100%;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            display: inline-block;
+            @include mmd{
+                letter-spacing: 2px
+            }
+            @include sm{
+                letter-spacing: 1px
+            }
+        }
+        h1 {
+            // text-shadow: 4px 5px 0px #000;
+            @include font-170;
+            text-transform: uppercase;
+            background: var(--Primary, linear-gradient(0deg, #E83227 1.47%, #FF757E 101.47%));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent; 
+            margin-bottom: 30px;
+        }
+        p{
+            font-weight: 500;
+            line-height: 180%;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+        }
+        .social-btns{
+            @include mmd{
+                justify-content: center;
+            }
+            .boxed-btn{
+                margin-left: 0;
+                padding: 16px 32px;
+                color: $white;
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 120%;
+                text-transform: uppercase;
+                @include sm{
+                    font-size: 22px;
+                }
+            }
+            .social-links{
+                a{
+                    border-radius: 42.22px;
+                    background: var(--Primary, linear-gradient(0deg, #E83227 1.47%, #FF757E 101.47%));
+                    box-shadow: 1.319px 3.958px 0px 0px #000;
+                    color: $white;
+                    path{
+                        fill:$white;
+                    }
+                }
+            }
+        }
+        
+    }
+}
