@@ -110,6 +110,10 @@ input::-webkit-inner-spin-button {
             align-items: center;
             justify-content: center;
             font-size: 26px;
+            &:hover{
+                border-color: #fff;
+                box-shadow: 1px 3px 0px 0px #fff;
+            }
         }
         img {
             max-width: 26px;
@@ -118,6 +122,24 @@ input::-webkit-inner-spin-button {
 }
 
 
+.boxed-btn{
+    border-radius: 32px;
+    background: var(--Primary, linear-gradient(0deg, #E83227 1.47%, #FF757E 101.47%));
+    box-shadow: 2px 4px 0px 0px $black;
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 14px 24px;
+    &:hover{
+        box-shadow: 2px 4px 0px 0px $white;
+    }
+    @include mmd{
+        margin-top: 10px;
+    }
+}
 .py-220{
     padding-top: 220px;
     padding-bottom: 220px;

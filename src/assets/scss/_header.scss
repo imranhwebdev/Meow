@@ -23,18 +23,13 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            background-color: rgba($color: #85F377, $alpha: .90);
+            background-color: rgba($color: #FFADED, $alpha: .9);
             padding: 24px 16px;
             transform: translateY(100%);
             @include transition;
+            z-index: 999;
             &.show-menu {
                 transform: translate(0, 0);
-            }
-        }
-        & .title {
-            margin-bottom: 32px;
-            @include sm {
-                margin-bottom: 24px;
             }
         }
         & .heading-actions {
@@ -48,7 +43,6 @@
         }
     }
     &-link {
-        // @include font-18;
         color: $_BEC1D6;
         display: block;
         text-transform: uppercase;
@@ -59,34 +53,18 @@
         }
         @include mmd {
             font-weight: 600;
-            // @include font-20;
-            // color: $heading;
             border-radius: 10px;
             padding: 13px 15px;
         }
         &:hover,
         &.active {
             color: $white;
-            // background-color: $heading;
-
         }
     }
     &-actions {
         grid-gap: 12px;
         @include sm {
             grid-gap: 8px;
-        }
-    }
-    & .btn {
-        --bs-btn-border-width: 1px !important;
-        --bs-btn-padding-x: 20px !important;
-        --bs-btn-padding-y: 7px !important;
-        &:not(.bg-primary) {
-            // border-color: $primary !important;
-            // color: $primary !important;
-            &:hover {
-                color: $white !important;
-            }
         }
     }
     & .container {
@@ -98,7 +76,6 @@
         --btn-padding-y: 5px;
         border: none;
         background-color: transparent;
-        // color: $heading;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -106,12 +83,6 @@
             --width: 40px;
             width: var(--width);
             height: var(--width);
-            @include sm {
-                --width: 32px;
-            }
-            @include ssm {
-                --width: 26px;
-            }
         }
     }
 button:focus {
@@ -120,33 +91,45 @@ button:focus {
 }
 .logo{
     img {
-        max-width: 174px;
-    }
-}
-}
-
-.main_menu{
-    // border: 1px solid $paragraph;
-    border-radius: 56px;
-    padding: 8px;
-    @include mmd{
-        border-radius: 10px;
+        max-width: 229px;
     }
 }
 
-ul.social-links a path {
-    fill: #000;
-}
 
 .boxed-btn{
     border-radius: 32px;
     background: var(--Primary, linear-gradient(0deg, #E83227 1.47%, #FF757E 101.47%));
-    box-shadow: 2px 4px 0px 0px #000;
-    color: var(--White, #FFF);
+    box-shadow: 2px 4px 0px 0px $black;
+    color: $white;
     font-size: 18px;
     font-weight: 600;
     line-height: 120%;
     text-transform: uppercase;
     display: inline-block;
     padding: 14px 24px;
+    &:hover{
+        box-shadow: 2px 4px 0px 0px $white;
+    }
+    @include mmd{
+        margin-top: 30px;
+    }
+}
+
+    ul.social-links{
+        a path {
+            fill: #000;
+        }
+        @include mmd{
+            margin-top:30px
+        }
+
+    }
+}
+
+.main_menu{
+    border-radius: 56px;
+    padding: 8px;
+    @include mmd{
+        border-radius: 10px;
+    }
 }

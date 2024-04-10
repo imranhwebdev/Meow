@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import AOS from 'aos';
 import marqueeImg1 from '../assets/img/marqueeImg1.png';
 import marqueeImg2 from '../assets/img/marqueeImg2.png';
 import marqueeImg3 from '../assets/img/marqueeImg3.png';
 import marqueeImg4 from '../assets/img/marqueeImg4.png';
 import Marquee from "react-fast-marquee";
 export default function MarqueeOne() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+        });
+      }, []);
+    
     const marqueeImgs = [
         {
             image: marqueeImg1,
@@ -250,7 +257,7 @@ export default function MarqueeOne() {
     ];
     return (
         <section className="marquee One">
-            <div className="section-title text-center">
+            <div className="section-title text-center" data-aos="fade-up">
                 <h2>Meow Meow Memes</h2>
             </div>
             <Marquee direction="left" speed={100}>
