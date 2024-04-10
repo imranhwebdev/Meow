@@ -1,0 +1,71 @@
+.about{
+    &-area{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        position: relative;
+        z-index: 1;
+        &::before{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/about-bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            z-index: -1;
+        }
+    }
+    &-content{
+        position: relative;
+        z-index: 1;
+        padding-top: 150px;
+        padding-bottom: 1200px;
+        @include xl{
+            padding-top: 200px;
+            padding-bottom: 600px;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 48px;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/about-content-bg.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top center;
+            z-index: -1;
+            @include xl{
+                background-size: contain
+            }
+            @include lg{
+                background-size: contain
+            }
+            @include mmd{
+                background-size: contain;
+                left: 25px;
+            }
+        }
+        h3{
+            @include font-40;
+            font-weight: 700;
+            text-transform: capitalize;
+            @include Quicksand;
+            margin-bottom: 20px;
+        }
+        p{
+            @include font-24;
+            font-weight: 500;
+            line-height: 160%;
+            margin-bottom: 10px;
+        }
+        &-inner{
+            max-width: 790px;
+            margin-inline: auto;
+        }
+    }
+}

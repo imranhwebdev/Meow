@@ -18,6 +18,234 @@ export default function MarqueeOne() {
         {
             image: marqueeImg4,
         },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
+        {
+            image: marqueeImg1,
+        },
+        {
+            image: marqueeImg2,
+        },
+        {
+            image: marqueeImg3,
+        },
+        {
+            image: marqueeImg4,
+        },
         
     ];
     return (
