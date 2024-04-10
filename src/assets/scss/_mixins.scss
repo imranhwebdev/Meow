@@ -125,6 +125,18 @@
 }
 
 
+@mixin font-35 {
+    font-size: 35px;
+    line-height: 120%;
+    @include md {
+        font-size: 30px;
+    }
+    @include sm {
+        font-size: 25px;
+    }
+}
+
+
 
 @mixin font-24 {
     font-size: 24px;

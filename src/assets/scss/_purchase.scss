@@ -1,0 +1,61 @@
+
+.purchase{
+    &-area{
+        position: relative;
+        z-index: 1;
+        padding-top: 150px;
+        padding-bottom: 180px;
+        @include sm{
+            padding-top: 50px;
+            padding-bottom: 100px;
+        }
+        & .purchessBg{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+        }
+        & .purcheseShap{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: 2;
+        }
+    }
+    &-wrapper{
+        margin-top: 80px;
+        @include sm{
+            margin-top: 50px;
+        }
+        .single-item{
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            padding: 50px 31px 50px 24px;
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+            p {
+                @include font-35;
+                font-weight: 500;
+                line-height: 150%;
+                text-transform: capitalize;
+                opacity: 0.9;
+            }
+            h5 {
+                font-family: Quicksand;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 80%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
