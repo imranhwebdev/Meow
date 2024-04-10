@@ -1,6 +1,6 @@
 .about{
     &-area{
-        padding-top: 30px;
+        padding-top: 150px;
         padding-bottom: 30px;
         position: relative;
         z-index: 1;
@@ -17,15 +17,48 @@
             background-position: bottom center;
             z-index: -1;
         }
+        .aboutleftshap{
+            position: absolute;
+            top:100px;
+            left: 0;
+            max-width: 320px;
+            @include mmd{
+                max-width: 250px;
+                top: 30px;
+            }
+            @include sm{
+                max-width: 200px;
+            }
+        }
+        .aboutRleap{
+            position: absolute;
+            top:100px;
+            right: 0;
+            max-width: 450px;
+            @include mmd{
+                max-width: 300px;
+                top: 40px;
+            }
+            @include sm{
+                max-width: 250px;
+            }
+        }
     }
     &-content{
         position: relative;
         z-index: 1;
         padding-top: 150px;
-        padding-bottom: 1200px;
-        @include xl{
-            padding-top: 200px;
-            padding-bottom: 600px;
+        padding-bottom: 900px;
+        @include mmd{
+            padding-top: 0px;
+            padding-bottom: 100px;
+        }
+        @include sm{
+            padding-top: 0px;
+            padding-bottom: 80px;
+        }
+        @include ssm{
+            padding-bottom: 40px;
         }
         &::before{
             position: absolute;
@@ -46,8 +79,7 @@
                 background-size: contain
             }
             @include mmd{
-                background-size: contain;
-                left: 25px;
+                display: none
             }
         }
         h3{
@@ -66,6 +98,20 @@
         &-inner{
             max-width: 790px;
             margin-inline: auto;
+            padding-top: 150px;
+            @include lg{
+                padding-top: 12%;
+            }
+            @include mmd{
+                padding-top: 80px;
+            }
         }
+    }
+}
+
+@media (min-width:992px) and (max-width:1170px){
+    .about-content-inner{
+        padding-top: 10%;
+        width: 60%;
     }
 }

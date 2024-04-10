@@ -1,8 +1,16 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
+import aboutleftshap from "../assets/img/about-left-shep.png"
+import aboutRleap from "../assets/img/about-right-leap.png"
 export default function About() {
   return (
     <section className='about-area'>
+        <figure className='aboutleftshap'>
+            <img src={aboutleftshap} alt="" />
+        </figure>
+        <figure className='aboutRleap'>
+            <img src={aboutRleap} alt="" />
+        </figure>
         <Container>
             <Row>
                 <Col>
