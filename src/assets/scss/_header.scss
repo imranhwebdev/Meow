@@ -10,6 +10,8 @@
 .heading {
     padding: var(--bs-navbar-padding-y) 0;
     --bs-navbar-padding-y: 30px;
+    position: relative;
+    z-index: 999;
     @include md {
         --bs-navbar-padding-y: 24px;
     }

@@ -1,5 +1,7 @@
 .our-vision{
     &-area{
+      position: relative;
+      z-index: 99;
         padding-top: 160px;
         padding-bottom: 160px;
         @include sm{
