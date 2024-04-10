@@ -1,0 +1,43 @@
+.marquee.One{
+    padding-top: 170px;
+    @include sm{
+        padding-top: 120px;
+    }
+    .section-title{
+        padding-bottom: 85px;
+        @include sm{
+            padding-bottom: 40px;
+        }
+    }
+}
+
+.marquee{
+    .rfm-child{
+        margin-right: 30px;
+        @include sm{
+            margin-right: 15px;
+        }
+    }
+    .single-item{
+        position:relative;
+        z-index: 1;
+        padding: 50px;
+        &::before{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/marquee-s-item-bg.png');
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        @include sm{
+            width: 300px;
+            padding: 20px;
+        }
+    }
+}

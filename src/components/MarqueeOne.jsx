@@ -27,7 +27,7 @@ export default function MarqueeOne() {
             </div>
             <Marquee direction="left" speed={100}>
                 {marqueeImgs.map((marqueeImg, index) => (
-                    <figure key={index}>
+                    <figure  className='single-item' key={index}>
                         <img src={marqueeImg.image} alt="" />
                     </figure>
                 ))}

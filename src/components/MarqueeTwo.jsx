@@ -21,10 +21,10 @@ export default function MarqueeTwo() {
         
     ];
     return (
-        <section className="marquee One">
+        <section className="marquee Two">
             <Marquee direction="right" speed={100}>
                 {marqueeImgs.map((marqueeImg, index) => (
-                    <figure key={index}>
+                    <figure className='single-item' key={index}>
                         <img src={marqueeImg.image} alt="" />
                     </figure>
                 ))}

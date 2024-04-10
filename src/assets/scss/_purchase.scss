@@ -29,11 +29,17 @@
         @include sm{
             margin-top: 50px;
         }
+        .col-lg-4{
+            @include sm{
+                margin-bottom: 30px;
+            }
+        }
         .single-item{
             position: relative;
             z-index: 1;
             height: 100%;
             padding: 50px 31px 50px 24px;
+          
             img {
                 position: absolute;
                 left: 0;

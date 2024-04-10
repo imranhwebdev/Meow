@@ -5,6 +5,7 @@ import OurVision from './components/OurVision'
 import Purchase from './components/Purchase'
 import MarqueeOne from './components/MarqueeOne'
 import MarqueeTwo from './components/MarqueeTwo'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Purchase />
       <MarqueeOne />
       <MarqueeTwo />
+      <Footer />
     </>
   )
 }
