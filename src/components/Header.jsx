@@ -69,7 +69,7 @@ export default function Header() {
                     <li key={index}><a href={link.href} target='_blank'>{link.icon}</a></li>
                 ))}
             </ul>
-            <a href="/" className='boxed-btn'>Buy Now</a>
+            <a href="https://www.chickenswap.com/" target="_blank" className='boxed-btn'>Buy Now</a>
           </nav>
           <div className="heading-actions d-flex align-items-center flex-wrap  d-lg-none">
             <button className="heading-toggler" onClick={() => setIsMenu(!isMenu)}>

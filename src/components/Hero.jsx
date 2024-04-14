@@ -57,7 +57,7 @@ export default function Hero() {
                     <h1  data-aos="fade-up" data-aos-duration="1000">$MEOW</h1>
                     <p data-aos="fade-up" data-aos-duration="1200">$MEOW is the first and only cat on Tron tweeted by Justin Sun</p>
                     <div className="social-btns d-sm-flex align-items-center" data-aos="fade-up" data-aos-duration="1400">
-                        <a href="/" className='boxed-btn'>Buy Now</a>
+                        <a href="https://www.chickenswap.com/" target="_blank" className='boxed-btn'>Buy Now</a>
                         <ul className="social-links mt-4 mt-sm-0">
                             {socialLinks.map((link, index) => (
                                 <li key={index}><a href={link.href} target="_blank">{link.icon}</a></li>
