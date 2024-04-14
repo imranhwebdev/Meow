@@ -39,9 +39,9 @@ export default function Header() {
   </defs>
 </svg>;
   const socialLinks = [
-    { icon: <FaPaperPlane />, href: '#' },
-    { icon: <FaXTwitter />, href: '#' },
-    { icon: socialLogo, href: '#' }
+    { icon: <FaPaperPlane />, href: 'https://t.me/meowmeow_trx' },
+    { icon: <FaXTwitter />, href: 'https://x.com/meowmeowTRC20' },
+    { icon: socialLogo, href: 'https://avedex.cc/token/TYwzUjaR5fiKkzwPHVYjyP22QgBKdqUwgo-tron?from=Token' }
 ];
 
 
@@ -66,7 +66,7 @@ export default function Header() {
             </div>
             <ul className="social-links">
                 {socialLinks.map((link, index) => (
-                    <li key={index}><a href={link.href}>{link.icon}</a></li>
+                    <li key={index}><a href={link.href} target='_blank'>{link.icon}</a></li>
                 ))}
             </ul>
             <a href="/" className='boxed-btn'>Buy Now</a>
