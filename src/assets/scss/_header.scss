@@ -9,14 +9,18 @@
 
 .heading {
     padding: var(--bs-navbar-padding-y) 0;
-    --bs-navbar-padding-y: 30px;
+    --bs-navbar-padding-y: 18px;
     position: relative;
     z-index: 999;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.10);
     @include md {
         --bs-navbar-padding-y: 24px;
     }
     @include sm {
         --bs-navbar-padding-y: 20px;
+    }
+    .container{
+        max-width: 1630px;
     }
     &-menu {
         @include mmd {
